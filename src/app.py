@@ -129,7 +129,7 @@ def import_issues():
    print(api_token)
    print(project_key)
    import_issues_into_zephyr(api_token, project_key)
-   return render_template('index.html')
+   return render_template('/templates/index.html')
 #    return jsonify({"message": "Issues imported and test steps uploaded successfully"}), 200
 if __name__ == '__main__':
    app.run(debug=True)
